@@ -17,6 +17,7 @@ function exactMatch(collection, searchObject) {
   return newCollection
 }
 
-function exactMatchToList() {
-
+function exactMatchToList(collection, searchObject) {
+  let newCollection = exactMatch(collection, searchObject).map(function(i) {return i.name})
+  return newCollection
 }
