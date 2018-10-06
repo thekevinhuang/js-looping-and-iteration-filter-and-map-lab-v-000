@@ -6,6 +6,7 @@ function driversWithRevenueOver(collection, number) {
 
 function driverNamesWithRevenueOver(collection, number) {
   let newCollection = driversWithRevenueOver(collection, number).map(function(i) {return i.name})
+  return newCollection
 }
 
 function exactMatch() {
