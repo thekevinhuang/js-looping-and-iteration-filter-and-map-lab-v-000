@@ -9,8 +9,11 @@ function driverNamesWithRevenueOver(collection, number) {
   return newCollection
 }
 
-function exactMatch() {
-
+function exactMatch(collection, searchObject) {
+  let newCollection = collection.filter(function(individual) {
+    let collectionKey = Object.keys(searchObject)[0]
+    return individual[Object.keys(searchObject)[0]] = searchObject)
+  })
 }
 
 function exactMatchToList() {
