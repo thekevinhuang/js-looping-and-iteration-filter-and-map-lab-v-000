@@ -14,6 +14,7 @@ function exactMatch(collection, searchObject) {
     let collectionKey = Object.keys(searchObject)[0]
     return individual[collectionKey] === searchObject[collectionKey]
   })
+  return newCollection
 }
 
 function exactMatchToList() {
